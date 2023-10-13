@@ -1,0 +1,581 @@
+/* Variables de colores */
+:root {
+    --primary-color: #800000;
+    --gold-color:  #ebc700;
+    --main-color:  #111;
+}
+
+/*------------------------------- Navbar ------------------------------------*/
+.colorRojo {
+    color: var(--primary-color);
+}
+
+.textoHover {
+    visibility: hidden;
+    position: fixed;
+    background: rgba(34, 34, 34, 0.915);
+    font-style: normal;
+}
+
+.linkNav:hover .textoHover {
+    visibility: visible;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    transition: filter .4s;
+}
+.logo:hover{
+    filter: brightness(125%);
+}
+
+header {
+    /* Hacer el navbar fijo */
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.form-custom{
+    background: #222;
+    color: #eee;
+}
+.form-custom::placeholder{
+    content: '';
+    color: #ccc;
+}
+.form-custom:focus{
+    background: #111;
+    color: #eee;
+}
+
+/*------------------------------- Modal ------------------------------------*/
+
+/* Estilo del fondo del modal */
+.modal-fondo {
+    background: var(--primary-color);
+    color: #eee8aa; /* color amarillo pálido */
+  }
+
+  /* Efecto sombra para la imagen, label e input */
+  .modal-fondo img, label, input {
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.9));
+  }
+
+  /* Estilos para botones */
+  .btn-close {
+    background-color:#eee8aa;
+  }
+
+  .btn-login {
+    text-decoration: none;
+    background: #810;
+    color: #eee8aa; 
+    font-weight: bold;    
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    transition: background .4s, color .4s, letter-spacing .4s;
+  }
+
+  .btn-login:hover {    
+    background: #830;  
+    color: #eee8aa;   
+    letter-spacing: 1px;
+  }
+  
+  .btn-google {
+    border: 1px solid #348037;
+    color: #fff;
+    transition: background-color .4s, letter-spacing .4s;
+  }
+
+  .btn-google:hover {
+    background-color: #348037;
+    letter-spacing: 1px;
+  }
+  
+  .btn-facebook {
+    border: 1px solid #3b5998;
+    color: #fff;  
+    transition: background-color .4s, letter-spacing .4s;
+  }
+
+  .btn-facebook:hover {
+    background-color: #3b5998;
+    letter-spacing: 1px;
+  }
+
+  .modal-title{
+    color: #fff;
+  }
+  
+  /* Estilos para links */
+  .color-088 {
+    color:#088;
+    font-weight: bold;
+    transition: color .4s, letter-spacing .4s;
+  } 
+  
+  .color-088:hover {
+    color: #ebc700;
+    letter-spacing: 1px;
+  }
+
+  .modal-body img{
+    height: 100%;
+  }
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Boton customizado */
+.btn-customized{
+    color: #fff;
+    background: var(--primary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: 600;
+    transition: filter .3s, letter-spacing .3s;
+    cursor: pointer;
+}
+.btn-customized:hover{
+    filter: brightness(1.2);
+    letter-spacing: 3px;
+}
+
+.logo-font {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.text-montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.text-georgia{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text-color-ccc{
+    color: #ccc;
+}
+
+main{
+    flex-grow: 1;
+    background: var(--main-color);
+}
+
+/* Sección banner inicio */
+.banner{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2))
+    ,url(../img/banner.jpg) center no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+.carouselProductos{
+    height: 420px;
+    object-fit: cover;
+    max-width: 65%;
+}
+
+.promo-data{
+    background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+}
+
+/* Titulos de cada sección  */
+.title{
+    font-family: 'Montserrat', sans-serif;
+    color: #eee;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+hr{
+    border-top: 2px solid var(--gold-color);
+}
+
+/* Detalles de los circulos de colores */
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.circle-red{
+    background: var(--primary-color);
+}
+.circle-white{
+    background: #ddd;
+}
+.circle-yellow{
+    background: #F1DB65;
+}
+
+.title-product a{
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    color: #ccc;
+}
+.title-product a:hover{
+    color: var(--gold-color);
+}
+
+.title-product h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: #eee;
+    font-weight: 500;
+}
+
+/* Customizando el precio de los productos  */
+.price{
+    font-weight: 600;
+    color: var(--gold-color);
+}
+.price span{
+    font-weight: 400;
+    color: #999;
+    font-size: 17px;
+    text-decoration: line-through;  /* Coloca el precio tachado */
+}
+
+/* Efecto de zoom al pasar el mouse sobre los productos  */
+.img-container-product{
+    overflow: hidden;
+    padding: 13px 0;
+}
+.img-container-product img{
+    transition: transform .6s;
+}
+.img-container-product img:hover{
+    transform: scale(1.3);
+}
+
+/* Customizando los iconos que aparecen en los productos  */
+.img-container-product .icons-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    gap: 7px;
+}
+.img-container-product .icons-container span{
+    font-size: 34px;
+    color: #aaa;
+    z-index: 1;
+    transition: color .3s;
+}
+
+.img-container-product .icons-container span:hover{
+    cursor: pointer;
+    color: var(--gold-color);
+}
+
+.info-container-product{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 7px;
+}
+
+/* Cutomizando el borde superior de las cartas de cada categoria  */
+.card-top-red{
+    border-top: 3px solid var(--primary-color);
+}
+.card-top-white{
+    border-top: 3px solid #ddd;
+}
+.card-top-yellow{
+    border-top: 3px solid #F1DB65;
+}
+
+.img-fluid-custom{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+/*------------------------------- Footer ------------------------------------*/
+#vinoteca-logo {
+    width: 150px;
+    height: 150px;
+}
+  
+.listaFooter {
+    padding: 0;
+}
+  
+footer {
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+  
+footer a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: color .3s;
+}
+footer a:hover {
+    color: var(--gold-color);
+}
+  
+.footer-a {
+    color: #f7f7f7;
+}
+  
+.advert-p {
+    color: #ebc700;
+}
+  
+.footer-hr {
+    width: 50%;
+    color: #ebc700;
+}
+
+/* PAGINA DETALLES DE CATEGORIA */
+.banner-category{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)) 
+    ,url(../img/detalle-categoria-tinto.jpeg) no-repeat;
+    background-size: cover;
+    background-position: 10% 85%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 55px;
+}
+
+.banner-category p,
+.banner-category-white p{
+    color: var(--gold-color);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.video{
+    width: 100%;
+    height: 358px;
+}
+
+.text-container{
+    background: #222;
+    padding: 30px 20px;
+}
+
+.text-container p{
+    line-height: 1.5;
+}
+
+.page-item .page-link{
+    color: #fff;
+    border: 1px solid #555;
+    background: #333;
+}
+
+.page-item .active{
+    background: var(--primary-color);
+   
+}
+
+.banner-category-white{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)) 
+    ,url(../img/detalle-categoria-blanco.jpg) no-repeat;
+    background-size: cover;
+    background-position: 10% 80%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 55px;
+}
+
+/*------------------------------- Detalle de producto ------------------------------------*/
+.divisionHR {
+    padding-top: 2px;
+}
+
+.listaDescripcion {    
+    list-style: inside;
+}
+
+.colorGris {
+    background-color: rgba(104, 104, 104, 0.34);
+}
+
+.bg-black-2{
+    background: #222;
+}
+
+/*------------------------------- Carrito de compras ------------------------------------*/
+.banner-carrito {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(32, 29, 29, 0.7), rgba(25, 22, 22, 0.7)), url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img-shop{
+    width: 10rem;
+    height: 90%;
+}
+
+.img-shop img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.txt-shop button:hover{
+    color: var(--primary-color);
+}
+
+select{
+    background: #333;
+    color: #fff;
+    border: 1px solid #999;
+    outline: none;
+    border-radius: 3px;
+    padding: 4px 10px;
+}
+
+.btn-container{
+    width: 100%;
+}
+
+.container-total{
+    padding: 35px 20px;
+    background: #222;
+}
+
+/*------------------------------- Sobre nosotros ------------------------------------*/
+
+.featured-article {
+    background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)) 
+    ,url("../img/about.jpg");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    padding: 100px 0;
+    color: white;
+}
+
+.team-card {
+    text-align: center;
+    justify-content: center;
+}
+  
+.team-card .card {
+    border-top: 4px solid var(--primary-color);
+}
+.team-card .card img{
+    object-fit: cover;
+}
+  
+.card-subtitle {
+    color: #ebc700;
+}
+
+.text-color-eee{
+    color: #eee;
+}
+
+/*------------------------------- Contactanos ------------------------------------*/
+
+.enviar-consulta-btn {
+    background-color: var(--primary-color);
+}
+  
+.enviar-consulta-btn:hover {
+    background-color: #590000;
+}
+
+.rolling-point-map {
+    width: 100%;
+    height: 500px;
+    border: 0;
+}
+
+/*------------------------------- Registro ------------------------------------*/
+
+.background-image-registro {
+    min-height: 100vh;
+    background-image: url("../img/registro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+  
+.title-register {
+    font-weight: bold;
+    text-shadow: 1px 1px 10px #880000e6;
+}
+  
+  /* Efecto de trasnparencia con el color negro */
+.transparent-box-registro {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2rem;
+    color: #eee8aa; /* color amarillo pálido */
+}
+  
+  /* Boton del formulario de registro */
+.btn-registro {
+    background: #800;
+    font-weight: bold;
+    transition: background .3s, letter-spacing .3s;
+}
+  
+.btn-registro:hover {
+    background: rgb(80, 11, 2);
+    letter-spacing: 1px;
+}
+  
+
+  
+
+
+@media screen and (max-width: 768px) {
+    .video{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .textoHover {
+        visibility: visible;
+        position: static;
+        background: transparent;
+    }
+    nav li {
+        margin: 5px 0;
+        border-bottom: 1px solid #444;
+    }
+    nav li:nth-child(1) {
+        background: transparent;
+    }
+    header input{
+        width: 100%;
+    }
+}

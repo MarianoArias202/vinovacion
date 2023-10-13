@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre el placer de los mejores vinos en nuestra vinoteca online. Encuentra una amplia selección de vinos tintos, blancos y espumosos de todo el mundo.">
+    <meta name="keywords" content="vinoteca, vinos, vino blanco, tino tinto, vino espumante, oferta de vinos, comprar vino">
+    <meta name="author" content="Oscar Luis Gallardo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/error.css">
+    <script src="https://kit.fontawesome.com/e8562b1a7f.js" crossorigin="anonymous"></script>
+    <title>Error 404</title>
+</head>
+  <body>
+    <header>
+      <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
+        <div class="container">
+          <div class="py-1 py-md-0">
+            <a href="../index.html" class="navbar-brand logo-font fs-2">
+              <img
+                src="../img/logo.png"
+                alt="Logo"
+                class="logo"
+              />
+              Vinovacion</a
+            >
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#opcionesMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="opcionesMenu">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="mav-item mt-4 mt-lg-0 me-lg-5 row">
+                <div class="justify-content-center">
+                  <form class="d-flex" role="search">
+                    <input
+                      class="form-control me-2 form-custom"
+                      type="search"
+                      placeholder="Buscar"
+                      aria-label="Buscar"
+                      maxlength="40"
+                    />
+                    <button class="btn btn-outline-light" type="submit">
+                      <i class="bi bi-search"></i>
+                    </button>
+                  </form>
+                </div>
+              </li>
+              <li class="mav-item mt-sm-4 mt-lg-0">
+                <a href="./sobre-nosotros.html" class="nav-link">Nosotros</a>
+              </li>
+              <li class="mav-item">
+                <a href="./contactanos.html" class="nav-link">Contacto</a>
+              </li>
+              <li class="mav-item">
+                <a type="button" class="nav-link linkNav" data-bs-toggle="modal" data-bs-target="#loginModal"
+                  ><i class="bi bi-person-fill"
+                    ><p class="text-lg-bg-dark textoHover">Iniciar sesion</p></i
+                  ></a>
+              </li>
+              <li class="mav-item">
+                <a href="./error404.html" class="nav-link linkNav"
+                  ><i class="bi bi-heart-fill"
+                    ><p class="text-lg-bg-dark textoHover">Ir a favoritos</p></i
+                  ></a
+                >
+              </li>
+              <li class="mav-item">
+                <a href="./carrito-de-compras.html" class="nav-link linkNav"
+                  ><i class="bi bi-cart4"
+                    ><p class="text-lg-bg-dark textoHover">
+                      Ir a carrito de compras
+                    </p></i
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="error-container">
+        <img
+          src="../img/error404b.jpg"
+          alt="Imagen de botella en el suelo"
+          class="error-img"
+        />
+
+        <h1 class="error-title">Error 404</h1>
+
+        <p class="error-text">
+          ¡Oh no! La página que estabas buscando se ha perdido en la estantería.
+          ¿Te gustaría intentarlo de nuevo? O tal vez te gustaría explorar
+          nuestra selección de vinos? ¡Tenemos algo para todos!
+        </p>
+
+        <a href="../index.html" class="btn-customized"
+          >Volver a la página de inicio</a
+        >
+      </div>
+
+       <!-- Modal -->
+       <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-fondo bg-dark">
+
+                <div class="modal-header">
+                    <h5 class="modal-title fs-3" id="loginModalLabel">Inicio de Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Cuerpo del modal -->
+                <div class="modal-body">
+
+                    <div class="row">
+
+                        <div class="col-md-6 align-self-center">
+                            <!-- Con "d-none d-md-block" se oculta la imagen en pantallas SM y XS -->
+                            <img src="../img/logo.png" class="img-fluid d-none d-md-block" alt="Copa elegante con vino">
+                        </div>
+
+                        <div class="col-md-6">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="usuario" class="form-label text-uppercase">Usuario</label>
+                                    <input id="usuario" type="text" placeholder="Ingrese su usuario" maxlength="15"
+                                        minlength="5" required class="form-control" />
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="contrasenia" class="form-label text-uppercase">Contraseña</label>
+                                    <input id="contrasenia" type="password" placeholder="Ingrese su contraseña" minlength="8"
+                                        maxlength="16" required class="form-control" />
+                                </div>
+
+                                <div class="d-grid mt-4">
+                                    <a href="./error404.html" class="text-uppercase fs-6 btn-login mb-2">
+                                        <i class="bi bi-box-arrow-in-right"></i> Iniciar Sesión
+                                    </a>
+                                    <a href="./registro.html" class="text-uppercase fs-6 btn-login">
+                                        <i class="bi bi-box-arrow-in-right"></i> Registrarse
+                                    </a>
+                                </div>
+                            </form>
+
+                            <hr>
+
+                            <div class="d-grid mb-3">                                    
+                                <a role="button" href="./error404.html" class="btn btn-google mb-3">
+                                    <i class="bi bi-google"></i> Iniciar con Google
+                                </a>
+
+                                <a role="button" href="./error404.html" class="btn btn-facebook mb-3">
+                                    <i class="bi bi-facebook"></i> Iniciar con Facebook
+                                </a>
+
+                                <a href="./error404.html" class="text-center color-088">¿Olvidaste tu contraseña?</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 text-center text-lg-start mb-4">
+            <img
+              src="../img/logo.png"
+              alt="vinoteca-logo"
+              id="vinoteca-logo"
+            />
+          </div>
+          <div class="col-lg-4 col-md-6 text-center mb-4">
+            <h5 class="mb-3 fs-3"><i class="fa-solid fa-wine-glass text-danger"></i> Información</h5>
+            <ul class="listaFooter list-unstyled">
+              <li>
+                <a href="./error404.html" class="footer-a"
+                  >Términos y Condiciones</a
+                >
+              </li>
+              <li>
+                <a href="./error404.html" class="footer-a"
+                  >Politicas de Privacidad</a
+                >
+              </li>
+              <li>
+                <a href="./error404.html" class="footer-a">Ayuda</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center mb-4">
+            <h5 class="mb-3 fs-3"><i class="fa-solid fa-wine-glass text-danger"></i> Redes</h5>
+            <a href="./error404.html" class="text-color-ccc"
+              ><i class="bi bi-instagram fs-3"></i
+            ></a>
+            <a href="./error404.html" class="text-color-ccc"
+              ><i class="bi bi-linkedin fs-3 mx-2"></i
+            ></a>
+            <a href="./error404.html" class="text-color-ccc"
+              ><i class="bi bi-facebook fs-3"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <p><i>&copy;Copyright - Vinoteca RC - RollingCode School 2023</i></p>
+        <div class="d-flex justify-content-center">
+          <hr class="footer-hr"></div>
+        <strong class="advert-p">
+        <p>
+          <i class="bi bi-exclamation-octagon"></i> Advertencia:</strong>
+          El consumo de alcohol puede ser perjudicial para la salud y debe
+          hacerse de manera responsable. Prohibida la venta a menores de 18
+          años. Beba con moderación.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

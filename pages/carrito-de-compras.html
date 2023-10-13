@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre el placer de los mejores vinos en nuestra vinoteca online. Encuentra una amplia selección de vinos tintos, blancos y espumosos de todo el mundo.">
+    <meta name="keywords" content="vinoteca, vinos, vino blanco, tino tinto, vino espumante, oferta de vinos, comprar vino">
+    <meta name="author" content="Mariano Arias">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/e8562b1a7f.js" crossorigin="anonymous"></script>
+    <title>Carrito de compras</title>
+</head>
+  <body>
+
+    <header>
+      <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
+        <div class="container">
+          <div class="py-1 py-md-0">
+            <a href="../index.html" class="navbar-brand logo-font fs-2">
+              <img
+                src="../img/logo.png"
+                alt="Logo"
+                class="logo"
+              />
+              Vinovacion</a
+            >
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#opcionesMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="opcionesMenu">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="mav-item mt-4 mt-lg-0 me-lg-5 row">
+                <div class="justify-content-center">
+                  <form class="d-flex" role="search">
+                    <input
+                      class="form-control me-2 form-custom"
+                      type="search"
+                      placeholder="Buscar"
+                      aria-label="Buscar"
+                      maxlength="40"
+                    />
+                    <button class="btn btn-outline-light" type="submit">
+                      <i class="bi bi-search"></i>
+                    </button>
+                  </form>
+                </div>
+              </li>
+              <li class="mav-item mt-sm-4 mt-lg-0">
+                <a href="./sobre-nosotros.html" class="nav-link">Nosotros</a>
+              </li>
+              <li class="mav-item">
+                <a href="./contactanos.html" class="nav-link">Contacto</a>
+              </li>
+              <li class="mav-item">
+                <a type="button" class="nav-link linkNav" data-bs-toggle="modal" data-bs-target="#loginModal"
+                  ><i class="bi bi-person-fill"
+                    ><p class="text-lg-bg-dark textoHover">Iniciar sesion</p></i
+                  ></a>
+              </li>
+              <li class="mav-item">
+                <a href="./error404.html" class="nav-link linkNav"
+                  ><i class="bi bi-heart-fill"
+                    ><p class="text-lg-bg-dark textoHover">Ir a favoritos</p></i
+                  ></a
+                >
+              </li>
+              <li class="mav-item">
+                <a href="./carrito-de-compras.html" class="nav-link linkNav"
+                  ><i class="bi bi-cart4"
+                    ><p class="text-lg-bg-dark textoHover">
+                      Ir a carrito de compras
+                    </p></i
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <main class="mt-5">
+      <section class="my-5 banner-carrito">
+        <h1 class="title">TU PEDIDO</h1>
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+              <h2 class="text-white fs-4 fw-semibold text-montserrat mb-4">
+                Detalles de la compra
+              </h2>
+              <div
+                class="mb-4 d-flex bg-black p-3 w-100 justify-content-around"
+              >
+                <div class="left">
+                  <div class="img-shop">
+                    <img
+                      src="../img/vino-tinto-1.png"
+                      alt="Imagen del producto en el carrito"
+                    />
+                  </div>
+                </div>
+                <div class="right flex-grow-1">
+                  <div class="txt-shop">
+                    <h3 class="text-light fs-5 text-montserrat">
+                      Vino Tinto Angelica Zapata Malbec
+                    </h3>
+                    <hr />
+                    <label
+                      for="cantidad"
+                      class="text-roboto text-color-ccc fs-6 me-2 mb-2"
+                      >Cantidad:
+                    </label>
+                    <select id="cantidad">
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <div
+                      class="mt-2 d-flex justify-content-between align-items-center flex-wrap"
+                    >
+                      <p class="price fs-3">$9999 <span>$21.372</span></p>
+                      <button type="button" class="btn fs-2 text-color-ccc">
+                        <i class="fa-solid fa-trash-can"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="mb-4 d-flex bg-black p-3 w-100 justify-content-around"
+              >
+                <div class="left">
+                  <div class="img-shop">
+                    <img
+                      src="../img/vino-tinto-2.png"
+                      alt="Imagen del producto en el carrito"
+                    />
+                  </div>
+                </div>
+                <div class="right flex-grow-1">
+                  <div class="txt-shop">
+                    <h3 class="text-light fs-5 text-montserrat">
+                      Vino Tinto Luca Malbec
+                    </h3>
+                    <hr />
+                    <label
+                      for="cantidad"
+                      class="text-roboto text-color-ccc fs-6 me-2 mb-2"
+                      >Cantidad:
+                    </label>
+                    <select id="cantidad">
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <div
+                      class="mt-2 d-flex justify-content-between align-items-center flex-wrap"
+                    >
+                      <p class="price fs-3">$14.134 <span>$15.878</span></p>
+                      <button type="button" class="btn fs-2 text-color-ccc">
+                        <i class="fa-solid fa-trash-can"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="mb-4 d-flex bg-black p-3 w-100 justify-content-around"
+              >
+                <div class="left">
+                  <div class="img-shop">
+                    <img
+                      src="../img/vino-blanco-4.png"
+                      alt="Imagen del producto en el carrito"
+                    />
+                  </div>
+                </div>
+                <div class="right flex-grow-1">
+                  <div class="txt-shop">
+                    <h3 class="text-light fs-5 text-montserrat">
+                      Vino Blanco Amalaya Torrontes
+                    </h3>
+                    <hr />
+                    <label
+                      for="cantidad"
+                      class="text-roboto text-color-ccc fs-6 me-2 mb-2"
+                      >Cantidad:
+                    </label>
+                    <select id="cantidad">
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <div
+                      class="mt-2 d-flex justify-content-between align-items-center flex-wrap"
+                    >
+                      <p class="price fs-3">$2.376 <span>$3.600</span></p>
+                      <button type="button" class="btn fs-2 text-color-ccc">
+                        <i class="fa-solid fa-trash-can"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-lg-6">
+              <div class="container-total text-light mt-md-4">
+                <h2 class="fs-4 fw-semibold text-montserrat">
+                  Resumen de la compra
+                </h2>
+                <hr />
+                <div
+                  class="my-4 d-flex justify-content-between align-items-center"
+                >
+                  <h3 class="text-montserrat">Total a pagar:</h3>
+                  <p class="price fs-1">$26.509</p>
+                </div>
+                <label
+                  for="pago"
+                  class="text-roboto text-color-ccc fs-5 me-2 mb-2"
+                  >Seleccione el medio de pago:
+                </label>
+                
+                <div class="mt-4 btn-container">
+                  <a
+                    href="./error404.html"
+                    class="btn-customized d-block text-center text-uppercase mb-3"
+                    >Realizar compra</a
+                  >
+                  <a
+                    href="../index.html"
+                    class="btn btn-outline-light d-block text-center text-uppercase"
+                    >Volver atras</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content modal-fondo bg-dark">
+
+          <div class="modal-header">
+              <h5 class="modal-title fs-3" id="loginModalLabel">Inicio de Sesión</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <!-- Cuerpo del modal -->
+          <div class="modal-body">
+
+              <div class="row">
+
+                  <div class="col-md-6 align-self-center">
+                      <!-- Con "d-none d-md-block" se oculta la imagen en pantallas SM y XS -->
+                      <img src="../img/logo.png" class="img-fluid d-none d-md-block" alt="Copa elegante con vino">
+                  </div>
+
+                  <div class="col-md-6">
+                      <form>
+                          <div class="mb-3">
+                              <label for="usuario" class="form-label text-uppercase">Usuario</label>
+                              <input id="usuario" type="text" placeholder="Ingrese su usuario" maxlength="15"
+                                  minlength="5" required class="form-control" />
+                          </div>
+
+                          <div class="mb-3">
+                              <label for="contrasenia" class="form-label text-uppercase">Contraseña</label>
+                              <input id="contrasenia" type="password" placeholder="Ingrese su contraseña" minlength="8"
+                                  maxlength="16" required class="form-control" />
+                          </div>
+
+                          <div class="d-grid mt-4">
+                              <a href="./error404.html" class="text-uppercase fs-6 btn-login mb-2">
+                                  <i class="bi bi-box-arrow-in-right"></i> Iniciar Sesión
+                              </a>
+                              <a href="./registro.html" class="text-uppercase fs-6 btn-login">
+                                  <i class="bi bi-box-arrow-in-right"></i> Registrarse
+                              </a>
+                          </div>
+                      </form>
+
+                      <hr>
+
+                      <div class="d-grid mb-3">                                    
+                          <a role="button" href="./error404.html" class="btn btn-google mb-3">
+                              <i class="bi bi-google"></i> Iniciar con Google
+                          </a>
+
+                          <a role="button" href="./error404.html" class="btn btn-facebook mb-3">
+                              <i class="bi bi-facebook"></i> Iniciar con Facebook
+                          </a>
+
+                          <a href="./error404.html" class="text-center color-088">¿Olvidaste tu contraseña?</a>
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+  </div>
+  </div>
+    </main>
+
+    <footer class="bg-dark text-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 text-center text-lg-start mb-4">
+            <img
+              src="../img/logo.png"
+              alt="vinoteca-logo"
+              id="vinoteca-logo"
+            />
+          </div>
+          <div class="col-lg-4 col-md-6 text-center mb-4">
+            <h5 class="mb-3 fs-3"><i class="fa-solid fa-wine-glass text-danger"></i> Información</h5>
+            <ul class="listaFooter list-unstyled">
+              <li>
+                <a href="./error404.html" class="footer-a"
+                  >Términos y Condiciones</a
+                >
+              </li>
+              <li>
+                <a href="./error404.html" class="footer-a"
+                  >Politicas de Privacidad</a
+                >
+              </li>
+              <li>
+                <a href="./error404.html" class="footer-a">Ayuda</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center mb-4">
+            <h5 class="mb-3 fs-3"><i class="fa-solid fa-wine-glass text-danger"></i> Redes</h5>
+            <a href="./error404.html" class="text-color-ccc"
+              ><i class="bi bi-instagram fs-3"></i
+            ></a>
+            <a href="./error404.html" class="text-color-ccc"
+              ><i class="bi bi-linkedin fs-3 mx-2"></i
+            ></a>
+            <a href="./error404.html" class="text-color-ccc"
+              ><i class="bi bi-facebook fs-3"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <p><i>&copy;Copyright - Vinoteca RC - RollingCode School 2023</i></p>
+        <div class="d-flex justify-content-center">
+          <hr class="footer-hr"></div>
+        <strong class="advert-p">
+        <p>
+          <i class="bi bi-exclamation-octagon"></i> Advertencia:</strong>
+          El consumo de alcohol puede ser perjudicial para la salud y debe
+          hacerse de manera responsable. Prohibida la venta a menores de 18
+          años. Beba con moderación.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
